@@ -56,7 +56,6 @@
             padding-left: 4px;
             flex-shrink: 0;
         }
-
         .row {
             background: rgba(255, 255, 255, 0.03);
             margin-bottom: 2px;
@@ -69,7 +68,6 @@
             gap: 6px;
             flex-shrink: 0;
         }
-
         .gimmick-info {
             width: 70%;
             display: flex;
@@ -92,7 +90,6 @@
             vertical-align: middle;
             flex-shrink: 0;
         }
-
         .nav-container {
             height: 12px;
             position: relative;
@@ -114,7 +111,6 @@
         }
         .active-jin .nav-jin { opacity: 1; }
         .active-geo .nav-geo { opacity: 1; }
-
         .btn-group {
             display: flex;
             gap: 4px;
@@ -132,7 +128,6 @@
             border-radius: 4px;
             cursor: pointer;
         }
-
         .row.active-jin { border-left-color: #4dadff; background: rgba(77, 173, 255, 0.08); }
         .row.active-geo { border-left-color: #ff4d4d; background: rgba(255, 77, 77, 0.08); }
         .row.active-jin .btn-jin { background: #4dadff; color: #fff; border-color: #3399ff; }
@@ -146,180 +141,177 @@
         <button class="reset-btn" onclick="resetAll()">전체 리셋</button>
     </div>
 
-    <!-- ===== 1턴 ===== -->
     <div class="section-title">【 1턴 】</div>
 
     <div class="row" id="t1-water">
         <div class="gimmick-info">
-            <div class="gimmick-name"><img src="icons/water.png" alt="물">물</div>
+            <div class="gimmick-name"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAABACAYAAABcIPRGAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAHYcAAB2HAY/l8WUAAAYaSURBVGhD7ZrhcaQ6EISVAS8DLgNeBlwGXAZcBjgDLgSFoBAIgRAIgRAUwlUPGjEaCQy7e7Z/WFVdXrPSqD/NSIvNGvPdvtt3+27f7R+3/z5Zt5sO8NV02mTH/40xP40xv54Qxr8iBry8CyGNW2PMYozxT2oN0tfvCl7+KJCieRBH41VV+bquHxbGvyKGAJlDRhII/gVv0Go1bevdNPl5Wf2yPiGMfzIGPFjnfN00MhtJJvgFyobM23n2blm8naH5QfH45+K4edm8TLOEQDklACCi0ums9cM0+95NvnOTbz9RmB8aJmj23TjKUvohAVA+qLeVB5F5685VmPQh6bhK0ZN1DIBS5zKKmzcC6ADHQt+Coavi8VncsjrneFMDgDfzMwDQgxA3zUMXAfKB5xJmosGZ1E8LiX/Pzd8EsFcArPPNLU27HDRHuXX1bvXJNeojx2TxjnUPYDzRIcButJ8XP6+e1M9rCnEEoOdRc14BWJrR+nq0Hj9z5UFL5hu30MpPQrhWhiiZ1/PunsQpVAZARzOMpGqwJFxL5XbZKWj2tYMWWnFpHhrmld6jPujL42QsNQ/Pz37I22WAXkgBkUYXNPnKQrOv3ELSqw/hWu3WrQ/6YgzGcpxodjesPVzPgByYgfAk1pvReTNO3th5E61+bp6F99DHWGjexiKGjKmNC10DQJDC4BwA5iUAVn87dbTxJAvTGiAkgIQozMsAeP+1ALt541bfL7tZPoFYfH1YkIX1JAuFeV8HcLz69XRsXkOg72kW9LwvA+jV6o/76mNltfklSEOMMguIgVgfApBkIF/9zLwPKkA0yIIsIwIIEHreewA8YMgCHK0+VlQCJOYLEOhrz7KATCdzb14aeLsGgAEaoFw+WMl3zR9AtDhWLwMMNwC6YVMGENJM5bOtPlYyARCG1yB5LcnCKrMgykgDBD/3ARIIBthXvz1ZfTafQagsdDILiK0BhJdrAMmgQgZi+ewfWmernwGoLCAGYiVllADczYCiPgJop/2GTQNo8xpCAtBewKdzBhAgZAbw+2MAIaCo/yHc81wpHw2gywixkn3wUgAqIwmw1X+2eZ8AoCM17gMBIMrn5QB36r8Eke+DDwbI6v9OBgr74LUA7bCJARgiHqOFDNwBUCVEGRiX9BjleeEh+HkeoN8BXr4HGABzPA/Q5xAJAP7rUDhGTyCOzEOIFT/IEoDdPDxdA6BBAAgQMQu8D5Bm/PGeAxCEqnUt2ZfHIxZibgAwrwE2Pw3uiW4DEESpjOZ4F5pBlEBUHx5HfxsUV1+U8uMAGkIAIAviOC1CCJXM09/IOH3i6rt99ZV5AoC3xwEKEOqWQkOUJPvGWwhtXtX+HYCVOmFAU4Iol1KnIEog+n2MuVo67EUBJM8HQEMAbT96ygIGXYUY8O/C/W+DM6EP+iZlc8E8PMHbEQAe12yPmIaRBNqKA0QQtR/UnsCKwhxuziQMXuMaGadV12VTqPswLzzg+OwG67t9E0/6EROEB2fIgu+H0fej9S3+HylBJETLHzQBQoKcilddbtjcPBnvBjIOLzAvHrm+Cd/xBYhARp3atvM9Bg+WUlc8XiWEBOlhsiRpvGwexqlcgnEsJp6csi9jjJOrz01AVOgQBzAIViIF4UkLIBpIX8+Mb+I654VTxtfgjc0nABrit6mq/asGVeXbrt9SGUAqTrcGiTAF8fsHxqlcEL/rpHHMv5iqwknJHjPz3MKb1Q9TNT9NVWNf4JksBaqqmmqRQbC5CIQ2XGrqVOhLdS6MI2bXyzqHJlPVb+QFnt4xL5vcF8jImzEVji4KjO8wdEg1g3QShMVGd8P7ybLdWSYbtK6FcWQfcyblcsm4biIj9S9jquRbLHj0TydW2CN09CYQqfKTZfR1Hb8+AKFUbJjr1oqfNbkCCMpfx4kZwWZjEN7oEgSvyXjcoKNv9u89QIjFX6d5etWPmghKGfkdToUIsp1YISP9SDBU49J46WTJV/ylxnXTGcHk8fODQWizh1MFr3FN9gljcAvzYcZ1K4DsH4QnQtbQ99OM61YCwR7B8YvyggCGa1/KuG7SFMNgU5Y25pcyrps2qvXS9hexiAGgurgLvAAAAABJRU5ErkJggg==" alt="물">물</div>
             <div class="nav-container">
                 <div class="nav-text nav-jin">📢 【진실】원형 쉐어</div>
                 <div class="nav-text nav-geo">📢 【거짓】개인 원형</div>
             </div>
         </div>
         <div class="btn-group">
-            <button class="choice-btn btn-jin" onclick="setSelect('t1-water', 'jin')">진실</button>
-            <button class="choice-btn btn-geo" onclick="setSelect('t1-water', 'geo')">거짓</button>
+            <button class="choice-btn btn-jin" onclick="setSelect('t1-water','jin')">진실</button>
+            <button class="choice-btn btn-geo" onclick="setSelect('t1-water','geo')">거짓</button>
         </div>
     </div>
 
     <div class="row" id="t1-lightning">
         <div class="gimmick-info">
-            <div class="gimmick-name"><img src="icons/lightning.png" alt="번개">번개</div>
+            <div class="gimmick-name"><img src="data:image/png;base64,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" alt="번개">번개</div>
             <div class="nav-container">
                 <div class="nav-text nav-jin">📢 【진실】개인 원형</div>
                 <div class="nav-text nav-geo">📢 【거짓】원형 쉐어</div>
             </div>
         </div>
         <div class="btn-group">
-            <button class="choice-btn btn-jin" onclick="setSelect('t1-lightning', 'jin')">진실</button>
-            <button class="choice-btn btn-geo" onclick="setSelect('t1-lightning', 'geo')">거짓</button>
+            <button class="choice-btn btn-jin" onclick="setSelect('t1-lightning','jin')">진실</button>
+            <button class="choice-btn btn-geo" onclick="setSelect('t1-lightning','geo')">거짓</button>
         </div>
     </div>
 
     <div class="row" id="t1-accel">
         <div class="gimmick-info">
-            <div class="gimmick-name"><img src="icons/accel.png" alt="가속도">가속도 폭탄</div>
+            <div class="gimmick-name"><img src="data:image/png;base64,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" alt="가속도">가속도 폭탄</div>
             <div class="nav-container">
                 <div class="nav-text nav-jin">📢 【진실】정지</div>
                 <div class="nav-text nav-geo">📢 【거짓】움직임</div>
             </div>
         </div>
         <div class="btn-group">
-            <button class="choice-btn btn-jin" onclick="setSelect('t1-accel', 'jin')">진실</button>
-            <button class="choice-btn btn-geo" onclick="setSelect('t1-accel', 'geo')">거짓</button>
+            <button class="choice-btn btn-jin" onclick="setSelect('t1-accel','jin')">진실</button>
+            <button class="choice-btn btn-geo" onclick="setSelect('t1-accel','geo')">거짓</button>
         </div>
     </div>
 
     <div class="row" id="t1-eye">
         <div class="gimmick-info">
-            <div class="gimmick-name"><img src="icons/eye.png" alt="마안">저주의 외침</div>
+            <div class="gimmick-name"><img src="data:image/png;base64,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" alt="마안">저주의 외침</div>
             <div class="nav-container">
                 <div class="nav-text nav-jin">📢 【진실】대상자 X</div>
                 <div class="nav-text nav-geo">📢 【거짓】대상자 O</div>
             </div>
         </div>
         <div class="btn-group">
-            <button class="choice-btn btn-jin" onclick="setSelect('t1-eye', 'jin')">진실</button>
-            <button class="choice-btn btn-geo" onclick="setSelect('t1-eye', 'geo')">거짓</button>
+            <button class="choice-btn btn-jin" onclick="setSelect('t1-eye','jin')">진실</button>
+            <button class="choice-btn btn-geo" onclick="setSelect('t1-eye','geo')">거짓</button>
         </div>
     </div>
 
     <div class="row" id="t1-fire">
         <div class="gimmick-info">
-            <div class="gimmick-name"><img src="icons/fire.png" alt="혼돈의 불">혼돈의 불</div>
+            <div class="gimmick-name"><img src="data:image/png;base64,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" alt="혼돈의 불">혼돈의 불</div>
             <div class="nav-container">
                 <div class="nav-text nav-jin">📢 【진실】원형 장판</div>
                 <div class="nav-text nav-geo">📢 【거짓】도넛 장판</div>
             </div>
         </div>
         <div class="btn-group">
-            <button class="choice-btn btn-jin" onclick="setSelect('t1-fire', 'jin')">진실</button>
-            <button class="choice-btn btn-geo" onclick="setSelect('t1-fire', 'geo')">거짓</button>
+            <button class="choice-btn btn-jin" onclick="setSelect('t1-fire','jin')">진실</button>
+            <button class="choice-btn btn-geo" onclick="setSelect('t1-fire','geo')">거짓</button>
         </div>
     </div>
 
-    <!-- ===== 2턴 ===== -->
     <div class="section-title">【 2턴 】</div>
 
     <div class="row" id="t2-water">
         <div class="gimmick-info">
-            <div class="gimmick-name"><img src="icons/water.png" alt="물">물</div>
+            <div class="gimmick-name"><img src="data:image/png;base64,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" alt="물">물</div>
             <div class="nav-container">
                 <div class="nav-text nav-jin">📢 【진실】원형 쉐어</div>
                 <div class="nav-text nav-geo">📢 【거짓】개인 원형</div>
             </div>
         </div>
         <div class="btn-group">
-            <button class="choice-btn btn-jin" onclick="setSelect('t2-water', 'jin')">진실</button>
-            <button class="choice-btn btn-geo" onclick="setSelect('t2-water', 'geo')">거짓</button>
+            <button class="choice-btn btn-jin" onclick="setSelect('t2-water','jin')">진실</button>
+            <button class="choice-btn btn-geo" onclick="setSelect('t2-water','geo')">거짓</button>
         </div>
     </div>
 
     <div class="row" id="t2-lightning">
         <div class="gimmick-info">
-            <div class="gimmick-name"><img src="icons/lightning.png" alt="번개">번개</div>
+            <div class="gimmick-name"><img src="data:image/png;base64,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" alt="번개">번개</div>
             <div class="nav-container">
                 <div class="nav-text nav-jin">📢 【진실】개인 원형</div>
                 <div class="nav-text nav-geo">📢 【거짓】원형 쉐어</div>
             </div>
         </div>
         <div class="btn-group">
-            <button class="choice-btn btn-jin" onclick="setSelect('t2-lightning', 'jin')">진실</button>
-            <button class="choice-btn btn-geo" onclick="setSelect('t2-lightning', 'geo')">거짓</button>
+            <button class="choice-btn btn-jin" onclick="setSelect('t2-lightning','jin')">진실</button>
+            <button class="choice-btn btn-geo" onclick="setSelect('t2-lightning','geo')">거짓</button>
         </div>
     </div>
 
     <div class="row" id="t2-accel">
         <div class="gimmick-info">
-            <div class="gimmick-name"><img src="icons/accel.png" alt="가속도">가속도 폭탄</div>
+            <div class="gimmick-name"><img src="data:image/png;base64,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" alt="가속도">가속도 폭탄</div>
             <div class="nav-container">
                 <div class="nav-text nav-jin">📢 【진실】정지</div>
                 <div class="nav-text nav-geo">📢 【거짓】움직임</div>
             </div>
         </div>
         <div class="btn-group">
-            <button class="choice-btn btn-jin" onclick="setSelect('t2-accel', 'jin')">진실</button>
-            <button class="choice-btn btn-geo" onclick="setSelect('t2-accel', 'geo')">거짓</button>
+            <button class="choice-btn btn-jin" onclick="setSelect('t2-accel','jin')">진실</button>
+            <button class="choice-btn btn-geo" onclick="setSelect('t2-accel','geo')">거짓</button>
         </div>
     </div>
 
     <div class="row" id="t2-eye">
         <div class="gimmick-info">
-            <div class="gimmick-name"><img src="icons/eye.png" alt="마안">저주의 외침</div>
+            <div class="gimmick-name"><img src="data:image/png;base64,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" alt="마안">저주의 외침</div>
             <div class="nav-container">
                 <div class="nav-text nav-jin">📢 【진실】대상자 X</div>
                 <div class="nav-text nav-geo">📢 【거짓】대상자 O</div>
             </div>
         </div>
         <div class="btn-group">
-            <button class="choice-btn btn-jin" onclick="setSelect('t2-eye', 'jin')">진실</button>
-            <button class="choice-btn btn-geo" onclick="setSelect('t2-eye', 'geo')">거짓</button>
+            <button class="choice-btn btn-jin" onclick="setSelect('t2-eye','jin')">진실</button>
+            <button class="choice-btn btn-geo" onclick="setSelect('t2-eye','geo')">거짓</button>
         </div>
     </div>
 
     <div class="row" id="t2-wave">
         <div class="gimmick-info">
-            <div class="gimmick-name"><img src="icons/wave.png" alt="혼돈의 물">혼돈의 물</div>
+            <div class="gimmick-name"><img src="data:image/png;base64,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" alt="혼돈의 물">혼돈의 물</div>
             <div class="nav-container">
                 <div class="nav-text nav-jin">📢 【진실】도넛 장판</div>
                 <div class="nav-text nav-geo">📢 【거짓】원형 장판</div>
             </div>
         </div>
         <div class="btn-group">
-            <button class="choice-btn btn-jin" onclick="setSelect('t2-wave', 'jin')">진실</button>
-            <button class="choice-btn btn-geo" onclick="setSelect('t2-wave', 'geo')">거짓</button>
+            <button class="choice-btn btn-jin" onclick="setSelect('t2-wave','jin')">진실</button>
+            <button class="choice-btn btn-geo" onclick="setSelect('t2-wave','geo')">거짓</button>
         </div>
     </div>
 
-    <!-- ===== 3턴 ===== -->
     <div class="section-title">【 3턴 】</div>
 
     <div class="row" id="t3-allag">
         <div class="gimmick-info">
-            <div class="gimmick-name"><img src="icons/allag.png" alt="알라그 필드">알라그 필드</div>
+            <div class="gimmick-name"><img src="data:image/png;base64,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" alt="알라그 필드">알라그 필드</div>
             <div class="nav-container">
                 <div class="nav-text nav-jin">📢 【진실】피해X — 같은 색 맞기</div>
                 <div class="nav-text nav-geo">📢 【거짓】피해O — 다른 색 맞기</div>
             </div>
         </div>
         <div class="btn-group">
-            <button class="choice-btn btn-jin" onclick="setSelect('t3-allag', 'jin')">진실</button>
-            <button class="choice-btn btn-geo" onclick="setSelect('t3-allag', 'geo')">거짓</button>
+            <button class="choice-btn btn-jin" onclick="setSelect('t3-allag','jin')">진실</button>
+            <button class="choice-btn btn-geo" onclick="setSelect('t3-allag','geo')">거짓</button>
         </div>
     </div>
 
     <div class="row" id="t3-death">
         <div class="gimmick-info">
-            <div class="gimmick-name"><img src="icons/death.png" alt="죽음 초월">죽음 초월</div>
+            <div class="gimmick-name"><img src="data:image/png;base64,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" alt="죽음 초월">죽음 초월</div>
             <div class="nav-container">
                 <div class="nav-text nav-jin">📢 【진실】피해O — 다른 색 맞기</div>
                 <div class="nav-text nav-geo">📢 【거짓】피해X — 같은 색 맞기</div>
             </div>
         </div>
         <div class="btn-group">
-            <button class="choice-btn btn-jin" onclick="setSelect('t3-death', 'jin')">진실</button>
-            <button class="choice-btn btn-geo" onclick="setSelect('t3-death', 'geo')">거짓</button>
+            <button class="choice-btn btn-jin" onclick="setSelect('t3-death','jin')">진실</button>
+            <button class="choice-btn btn-geo" onclick="setSelect('t3-death','geo')">거짓</button>
         </div>
     </div>
 
@@ -335,7 +327,6 @@
             if (type === 'jin') row.classList.add('active-jin');
             if (type === 'geo') row.classList.add('active-geo');
         }
-
         function resetAll() {
             document.querySelectorAll('.row').forEach(row => {
                 row.classList.remove('active-jin', 'active-geo');
