@@ -1,0 +1,22 @@
+{
+  "name": "P4 진위 판정",
+  "short_name": "P4 카페",
+  "description": "절요성난무 P4 진위 판정 도구",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#0f0f0f",
+  "theme_color": "#ffcc00",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
